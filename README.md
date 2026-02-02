@@ -10,6 +10,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 
 ## Days
 - **Day 001 — EWMA Volatility**: `day-001-ewma-volatility/`
+- **Day 002 — GARCH(1,1) Volatility**: `day-002-garch-volatility/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
