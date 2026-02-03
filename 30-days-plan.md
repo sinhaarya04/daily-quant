@@ -1,77 +1,72 @@
-# 30 Days of Projects — daily-quant (ML-heavy)
+# 30 Days of Projects — daily-quant (ML-first)
 
-Goal: **~30-minute quant mini-projects** with small, reproducible scripts/notebooks.
-Each day should ideally include: `README.md` + `*.py` (or notebook) + minimal deps.
+Goal: **~30-minute ML-oriented quant mini-projects** — small, focused, reproducible.
+Each day: `day-XXX-topic/` with `README.md` + script/notebook + minimal deps.
 
-## Days 001–003 (your 30-day sequence)
+## Anchors (your challenge)
 1. **Day 001 — EWMA Volatility (VaR sketch)**
-   - Deliverable: compute EWMA vol on log returns, plot; quick VaR estimate.
 2. **Day 002 — GARCH(1,1) Volatility**
-   - Deliverable: fit GARCH(1,1) (t-errors), plot conditional vol, print params.
 3. **Day 003 — Rolling beta vs SPY (CAPM regression)**
-   - Deliverable: rolling OLS beta; visualize regime shifts.
 
-> Note: your repo currently also has a folder `day-003-realized-vs-vix/` comparing realized vol to VIX. If you want your numbering to match the 30-day challenge exactly, we can rename/re-number folders.
+> Repo note: your GitHub repo currently contains `day-003-realized-vs-vix/` as well. If you want strict numbering alignment with the 30-day challenge, we can rename/re-number later.
 
-## Days 004–030 (proposed)
-4. **Day 004 — Realized Volatility vs VIX**
-   - Deliverable: rolling realized vol vs VIX plot + scatter + correlation/fit.
-5. **Day 005 — Data sanity + stylized facts**
-   - Returns distribution, autocorr, volatility clustering, QQ-plot.
-6. **Day 006 — PCA on sector returns (risk factors)**
-   - PCA on XLF/XLK/…; explain variance; first PC as “market” proxy.
-7. **Day 007 — Simple factor model (value/momentum proxies)**
-   - Construct naive factors from ETF baskets; regress returns on factors.
-8. **Day 008 — Feature engineering: lag/rolling features**
-   - Build a feature table: lagged returns, rolling mean/vol, RSI, MACD.
-9. **Day 009 — Train/test split for time series + baseline predictor**
-   - Walk-forward split; baseline: predict sign with last return / rolling mean.
-10. **Day 010 — Logistic regression for direction (classification)**
-   - Predict next-day up/down using engineered features; report AUC/accuracy.
-11. **Day 011 — Regularization (L1/L2) + stability**
-   - Compare ridge vs lasso; inspect coefficient stability across windows.
-12. **Day 012 — Tree models (RandomForest / XGBoost-light)**
-   - Feature importance + calibration; avoid lookahead.
-13. **Day 013 — Purged time-series CV (leakage control)**
-   - Implement purged/embargoed CV for financial labels.
-14. **Day 014 — Labeling: triple-barrier (Lopez de Prado)**
-   - Create event-based labels; compare to fixed-horizon labels.
-15. **Day 015 — Probabilities to positions (sizing)**
-   - Map model probs → position size; compare threshold vs Kelly-fraction-lite.
-16. **Day 016 — Backtesting scaffold (costs + slippage)**
-   - Minimal vectorized backtest; include transaction costs; equity curve.
-17. **Day 017 — Risk metrics dashboard**
-   - Sharpe, Sortino, max drawdown, turnover, hit-rate; rolling metrics.
-18. **Day 018 — Vol targeting**
-   - Use realized vol to scale positions to a target vol; compare before/after.
-19. **Day 019 — Regime detection with HMM (or k-means on vol/returns)**
-   - Identify regimes; conditional performance by regime.
-20. **Day 020 — Clustering stocks by correlation**
-   - Hierarchical clustering; plot dendrogram/cluster heatmap.
-21. **Day 021 — Mean reversion: pairs trading (distance / cointegration)**
-   - Find candidate pair; z-score spread; simple entry/exit; backtest.
-22. **Day 022 — Momentum: cross-sectional top-k**
-   - Universe of ETFs/stocks; rank by lookback return; rebalance monthly.
-23. **Day 023 — Portfolio optimization (mean-variance with constraints)**
-   - Minimum variance / risk parity baseline; compare allocations.
-24. **Day 024 — Shrinkage covariance (Ledoit–Wolf)**
-   - Show effect on optimized weights and realized risk.
-25. **Day 025 — Forecast volatility with ML (regression)**
-   - Predict next 5–20d realized vol with ridge/GBM; evaluate RMSE.
-26. **Day 026 — LSTM/GRU toy model on returns/vol (careful eval)**
-   - Tiny network; walk-forward; compare to linear baseline.
-27. **Day 027 — Attention/Transformer-lite for time series (toy)**
-   - Small transformer encoder on features; emphasize leakage-safe evaluation.
-28. **Day 028 — Options-ish: implied vs realized spread signal**
-   - Use VIX–RV spread as feature; test if spread predicts future RV/returns.
-29. **Day 029 — Interpretability: SHAP (or permutation importance)**
-   - Explain a model’s drivers; stability across time.
-30. **Day 030 — End-to-end report + lessons learned**
-   - One markdown report: what worked, what didn’t, next iteration plan.
+## ML-first 30-day sequence (not pairs-trading; minimize overlap w/ your other repos)
+4. **Time-series splits + leakage checklist**
+   - Walk-forward, anchored splits, feature lagging rules; unit test for lookahead.
+5. **Feature pipeline v1 (tabular) + data validation**
+   - Build a single `make_features()` that outputs a clean (X, y) table + schema checks.
+6. **Baselines that don’t embarrass you**
+   - Naive (random/last sign), linear regression, ridge; compare with proper backtest metric.
+7. **Target engineering: returns vs vol-adjusted returns vs quantiles**
+   - Define multiple targets; compare stability and noise.
+8. **Probabilistic classification (direction) + calibration**
+   - Logistic vs calibrated models (Platt/isotonic); reliability curve.
+9. **Gradient boosting for tabular signals**
+   - LightGBM/XGBoost or sklearn HistGB; feature importance + stability.
+10. **Hyperparameter search (time-series safe)**
+   - Random search with walk-forward CV; log results; avoid leakage.
+11. **Conformal prediction for trading signals**
+   - Predict intervals / set-valued predictions; trade only when confident.
+12. **Meta-labeling (Lopez de Prado style)**
+   - Primary signal + meta-model that predicts when to trust it.
+13. **Cost-aware objective / turnover regularization**
+   - Add transaction-cost penalty; evaluate turnover vs performance.
+14. **Position sizing from probabilities**
+   - Map p→position (linear, Kelly-lite, volatility scaling); compare drawdowns.
+15. **Backtest scaffold v2 (event-based) + slippage model**
+   - Simple, explicit fills + costs; keep it reproducible.
+16. **Model monitoring: drift + performance decay**
+   - PSI/KS drift checks; rolling AUC; alert when distribution shifts.
+17. **Online learning (streaming updates)**
+   - SGDClassifier/PassiveAggressive; compare online vs batch.
+18. **Ensembling + stacking (time-series safe)**
+   - Blend linear + trees; stacking with out-of-fold predictions.
+19. **Unsupervised feature learning on returns (autoencoder / PCA++)**
+   - Latent factors as features; compare vs raw engineered features.
+20. **Clustering regimes from learned embeddings (not classic HMM)**
+   - Cluster latent states; conditional model performance by cluster.
+21. **Graph features from correlation networks**
+   - Build a correlation graph; node centrality/community as features.
+22. **Cross-sectional modeling (many assets) + ranking loss**
+   - Learn to rank (pairwise/logit) for top-k selection across tickers.
+23. **Labeling with triple-barrier (event labels)**
+   - Implement event labels; compare to fixed-horizon.
+24. **Imbalanced learning + focal loss / class weights**
+   - When labels are sparse; measure precision/recall tradeoffs.
+25. **Interpretability: permutation + SHAP stability over time**
+   - Does “important” stay important? Visualize drift in explanations.
+26. **NLP add-on: FinBERT embeddings for news (upgrade your sentiment project)**
+   - Pull headlines (or use a sample set) → embeddings → predictive features.
+27. **Multimodal: combine price features + NLP features**
+   - Late fusion model; see incremental lift.
+28. **Vol surface / options features (but ML-focused)**
+   - Build a small options-feature set (IV level, skew proxy) and test marginal value.
+29. **Risk model integration: predict returns with uncertainty → optimize**
+   - Use predicted mean + variance to size positions; compare to naive sizing.
+30. **Final day: reproducible report + lessons learned**
+   - One markdown writeup + plots + “what I’d do next”.
 
-## Suggested folder naming
-Use: `day-XXX-topic/` e.g. `day-010-logreg-direction/`.
-
-## Suggested minimal deps
-- `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `yfinance`
-- Optional later: `statsmodels`, `arch`, `hmmlearn`, `cvxpy`, `shap`, `torch`
+## Suggested deps (keep it lean)
+- Core: `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `yfinance`
+- Often useful: `scipy`, `statsmodels`
+- Optional ML: `lightgbm`/`xgboost`, `torch`, `shap`, `networkx`, `transformers`
