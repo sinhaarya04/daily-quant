@@ -17,6 +17,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 006 — Baseline ML Classifier**: `day-006-baseline-ml-classifier/`
 - **Day 007 — Yield Curve Inversion vs Forward SPY Returns**: `day-007-yield-curve-inversion-spy-returns/`
 - **Day 008 — Walk-forward Minimum-Variance ETF Portfolio**: `day-008-walkforward-minvar-etf-portfolio/`
+- **Day 009 — Trend + Vol Targeting on SPY**: `day-009-trend-vol-target-spy/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
