@@ -18,6 +18,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 007 — Yield Curve Inversion vs Forward SPY Returns**: `day-007-yield-curve-inversion-spy-returns/`
 - **Day 008 — Walk-forward Minimum-Variance ETF Portfolio**: `day-008-walkforward-minvar-etf-portfolio/`
 - **Day 009 — Trend + Vol Targeting on SPY**: `day-009-trend-vol-target-spy/`
+- **Day 010 — Equity/Bond Correlation Regimes (SPY vs TLT) + 10Y Yield**: `day-010-equity-bond-corr-regimes/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
