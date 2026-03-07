@@ -19,6 +19,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 008 — Walk-forward Minimum-Variance ETF Portfolio**: `day-008-walkforward-minvar-etf-portfolio/`
 - **Day 009 — Trend + Vol Targeting on SPY**: `day-009-trend-vol-target-spy/`
 - **Day 010 — Equity/Bond Correlation Regimes (SPY vs TLT) + 10Y Yield**: `day-010-equity-bond-corr-regimes/`
+- **Day 011 — Turn-of-the-Month Effect (SPY)**: `day-011-turn-of-month-effect/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
