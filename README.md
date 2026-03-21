@@ -21,6 +21,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 010 — Equity/Bond Correlation Regimes (SPY vs TLT) + 10Y Yield**: `day-010-equity-bond-corr-regimes/`
 - **Day 011 — Turn-of-the-Month Effect (SPY)**: `day-011-turn-of-month-effect/`
 - **Day 012 — Sahm Rule Tactical Allocation (UNRATE → SPY/Cash)**: `day-012-sahm-rule-tactical-allocation/`
+- **Day 013 — VIX vs Realized Vol (Volatility Risk Premium)**: `day-013-vix-vs-realized-vol-vrp/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
