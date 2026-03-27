@@ -22,6 +22,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 011 — Turn-of-the-Month Effect (SPY)**: `day-011-turn-of-month-effect/`
 - **Day 012 — Sahm Rule Tactical Allocation (UNRATE → SPY/Cash)**: `day-012-sahm-rule-tactical-allocation/`
 - **Day 013 — VIX vs Realized Vol (Volatility Risk Premium)**: `day-013-vix-vs-realized-vol-vrp/`
+- **Day 014 — Rolling Hedge Ratio (SPY vs TLT)**: `day-014-rolling-hedge-ratio-spy-tlt/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
