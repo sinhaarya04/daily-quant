@@ -25,6 +25,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 014 — Rolling Hedge Ratio (SPY vs TLT)**: `day-014-rolling-hedge-ratio-spy-tlt/`
 - **Day 015 — Volume Shock vs Next-Day Returns (SPY)**: `day-015-volume-shock-next-day-returns/`
 - **Day 016 — Rolling Pairs Trading (Z-score of Spread)**: `day-016-rolling-pairs-trading-zscore/`
+- **Day 017 — Sector Rotation via Relative Momentum (Monthly)**: `day-017-sector-rotation-relative-momentum/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
