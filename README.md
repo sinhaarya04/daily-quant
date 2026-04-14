@@ -28,6 +28,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 017 — Sector Rotation via Relative Momentum (Monthly)**: `day-017-sector-rotation-relative-momentum/`
 - **Day 018 — KAMA Adaptive Trend Filter (SPY)**: `day-018-kama-adaptive-trend/`
 - **Day 019 — Value-at-Risk (VaR) + Backtest (SPY)**: `day-019-var-backtest-spy/`
+- **Day 020 — Drawdowns & Recovery Time Stats (SPY)**: `day-020-drawdown-recovery-stats/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
