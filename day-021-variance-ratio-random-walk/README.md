@@ -12,11 +12,13 @@ This mini-project implements the **Lo–MacKinlay variance ratio (VR) test** to 
 - Plots a **rolling 5-year VR(5)** to visualize regime changes
 
 ## How to run
-From the repo root:
+From the repo root (recommended: use a virtualenv):
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-python day-021-variance-ratio-random-walk/main.py
+python3 day-021-variance-ratio-random-walk/main.py
 ```
 
 Outputs:
