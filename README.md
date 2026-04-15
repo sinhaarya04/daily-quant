@@ -29,6 +29,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 018 — KAMA Adaptive Trend Filter (SPY)**: `day-018-kama-adaptive-trend/`
 - **Day 019 — Value-at-Risk (VaR) + Backtest (SPY)**: `day-019-var-backtest-spy/`
 - **Day 020 — Drawdowns & Recovery Time Stats (SPY)**: `day-020-drawdown-recovery-stats/`
+- **Day 021 — Variance Ratio Test (Random Walk?) on SPY**: `day-021-variance-ratio-random-walk/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
