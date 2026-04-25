@@ -30,6 +30,8 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 019 — Value-at-Risk (VaR) + Backtest (SPY)**: `day-019-var-backtest-spy/`
 - **Day 020 — Drawdowns & Recovery Time Stats (SPY)**: `day-020-drawdown-recovery-stats/`
 - **Day 021 — Variance Ratio Test (Random Walk?) on SPY**: `day-021-variance-ratio-random-walk/`
+- **Day 022 — Kalman Filter Dynamic Hedge Ratio**: `day-022-kalman-dynamic-hedge-ratio/`
+- **Day 023 — Financial Stress Regime Filter (FRED STLFSI4 → SPY/Cash)**: `day-023-financial-stress-regime-filter/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
