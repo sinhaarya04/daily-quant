@@ -32,6 +32,9 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 021 — Variance Ratio Test (Random Walk?) on SPY**: `day-021-variance-ratio-random-walk/`
 - **Day 022 — Kalman Filter Dynamic Hedge Ratio**: `day-022-kalman-dynamic-hedge-ratio/`
 - **Day 023 — Financial Stress Regime Filter (FRED STLFSI4 → SPY/Cash)**: `day-023-financial-stress-regime-filter/`
+- **Day 024 — Real Rate Regimes (DGS10 − T10YIE) vs SPY Returns**: `day-024-real-rate-regimes-spy/`
+- **Day 025 — Credit Spread Regimes (BAA10Y − DGS10) vs SPY Returns**: `day-025-credit-spread-regimes-spy/`
+- **Day 026 — Overnight vs Intraday Returns (SPY)**: `day-026-overnight-vs-intraday-spy/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
