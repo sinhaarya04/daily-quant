@@ -35,6 +35,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 024 — Real Rate Regimes (DGS10 − T10YIE) vs SPY Returns**: `day-024-real-rate-regimes-spy/`
 - **Day 025 — Credit Spread Regimes (BAA10Y − DGS10) vs SPY Returns**: `day-025-credit-spread-regimes-spy/`
 - **Day 026 — Overnight vs Intraday Returns (SPY)**: `day-026-overnight-vs-intraday-spy/`
+- **Day 027 — Risk Parity (Inverse-Vol) vs 60/40 (SPY/TLT)**: `day-027-risk-parity-vs-60-40/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
