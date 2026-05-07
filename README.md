@@ -36,6 +36,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 025 — Credit Spread Regimes (BAA10Y − DGS10) vs SPY Returns**: `day-025-credit-spread-regimes-spy/`
 - **Day 026 — Overnight vs Intraday Returns (SPY)**: `day-026-overnight-vs-intraday-spy/`
 - **Day 027 — Risk Parity (Inverse-Vol) vs 60/40 (SPY/TLT)**: `day-027-risk-parity-vs-60-40/`
+- **Day 028 — PCA Sector Risk Model (Eigen-Covariance) + Walk-forward Min-Var**: `day-028-pca-sector-risk-model/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
