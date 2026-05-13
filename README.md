@@ -38,6 +38,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 027 — Risk Parity (Inverse-Vol) vs 60/40 (SPY/TLT)**: `day-027-risk-parity-vs-60-40/`
 - **Day 028 — PCA Sector Risk Model (Eigen-Covariance) + Walk-forward Min-Var**: `day-028-pca-sector-risk-model/`
 - **Day 029 — Inflation Expectations & Real-Rate Regimes vs Forward SPY Returns**: `day-029-inflation-breakeven-realrate-regimes/`
+- **Day 030 — Rolling Hurst Exponent (DFA) on SPY**: `day-030-rolling-hurst-dfa/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
