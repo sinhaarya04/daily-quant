@@ -39,6 +39,8 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 028 — PCA Sector Risk Model (Eigen-Covariance) + Walk-forward Min-Var**: `day-028-pca-sector-risk-model/`
 - **Day 029 — Inflation Expectations & Real-Rate Regimes vs Forward SPY Returns**: `day-029-inflation-breakeven-realrate-regimes/`
 - **Day 030 — Rolling Hurst Exponent (DFA) on SPY**: `day-030-rolling-hurst-dfa/`
+- **Day 031 — OHLC Volatility Estimators**: `day-031-ohlc-vol-estimators/`
+- **Day 032 — Industrial Production Regime Filter (FRED INDPRO → SPY/Cash)**: `day-032-industrial-production-regime/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
