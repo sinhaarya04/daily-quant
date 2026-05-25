@@ -41,6 +41,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 030 — Rolling Hurst Exponent (DFA) on SPY**: `day-030-rolling-hurst-dfa/`
 - **Day 031 — OHLC Volatility Estimators**: `day-031-ohlc-vol-estimators/`
 - **Day 032 — Industrial Production Regime Filter (FRED INDPRO → SPY/Cash)**: `day-032-industrial-production-regime/`
+- **Day 033 — Shrinkage Covariance for a Minimum-Variance Portfolio (Sample vs Ledoit–Wolf)**: `day-033-shrinkage-minvar-portfolio/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
