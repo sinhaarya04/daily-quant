@@ -42,6 +42,7 @@ Each day is a folder: `day-XXX-<topic>/` with:
 - **Day 031 — OHLC Volatility Estimators**: `day-031-ohlc-vol-estimators/`
 - **Day 032 — Industrial Production Regime Filter (FRED INDPRO → SPY/Cash)**: `day-032-industrial-production-regime/`
 - **Day 033 — Shrinkage Covariance for a Minimum-Variance Portfolio (Sample vs Ledoit–Wolf)**: `day-033-shrinkage-minvar-portfolio/`
+- **Day 034 — Time-Varying Beta via Recursive Least Squares (RLS)**: `day-034-rls-time-varying-beta/`
 
 ## Notes
 These are educational mini-projects, not financial advice.
