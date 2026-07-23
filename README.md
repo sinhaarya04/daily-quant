@@ -1,4 +1,16 @@
-# daily-quant
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Streak-34%20Days-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Format-30--min%20Mini%20Projects-purple?style=for-the-badge" />
+</p>
+
+<h1 align="center">📅 daily-quant</h1>
+
+<p align="center">
+  <b>One quant finance mini-project a day — volatility, regimes, portfolios, and market microstructure in ~30 minutes each</b>
+</p>
+
+---
 
 Daily **~30-minute quant finance mini-projects** — small, focused, and reproducible.
 
